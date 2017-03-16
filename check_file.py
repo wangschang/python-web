@@ -1,12 +1,13 @@
 # Description	: Check a file exists and that we can read the file
 # 注释版本 2017-03-16 wangschang
-
+# 使用方法 python3 check_file.py 文件名称
 from __future__ import print_function
 import sys		# 导入模块
 import os		# 导入注释
 
 #定义提示信息
-def uage():
+def usage():
+    print('读取文件内容')
     print('[+]Usage: python check_file.py <filename1> [filename2] ... [filenameN]')
     exit(0)
 
@@ -35,7 +36,7 @@ def main():
         for filename in filenames:
             readfile(filename)
     else:
-        uage()
+        usage()
 #执行主函数
 if __name__ == '__main__':
     main()
