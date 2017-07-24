@@ -1,4 +1,8 @@
 
+#!/usr/bin/env python  
+# -*- coding: utf-8 -*-
+#统计输入文件的字母出现字数
+
 import pprint
 import collections
 
@@ -6,9 +10,7 @@ import collections
 def main():
 
     file_input =  raw_input('File Name: ')
-    #print(file_input)
     with open(file_input, 'r') as info:
-        #print(info.read())
         count = collections.Counter(info.read().upper())
 
     value = pprint.pformat(count)
