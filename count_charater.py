@@ -10,6 +10,8 @@ import collections
 def main():
 
     file_input =  raw_input('File Name: ')
+    if not os.path.isfile(filename):
+        print('文件不存在')
     with open(file_input, 'r') as info:
         count = collections.Counter(info.read().upper())
 
