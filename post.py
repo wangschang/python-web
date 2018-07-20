@@ -11,7 +11,7 @@ def main():
     msg = '您的验证码是123456'
     values = {  
             'msg' : msg,
-            'mobile':'18518100104'
+            'mobile':'18518100000'
              }   
     data = urllib.urlencode(values)
     req = urllib2.Request(url, data)
